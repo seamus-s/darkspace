@@ -1,0 +1,7 @@
+obj/
+bin/
+temp/
+node_modules/
+dist/
+*.log
+*.tmp
