@@ -10,5 +10,15 @@
 | Manage repository changes by using pull requests on GitHub | Reviewing pull requests        | [https://github.com/skills/review-pull-requests](https://github.com/skills/review-pull-requests) |
 
 ***
-
-
+```mermaid
+flowchart TD
+A[Create branch & make changes] --> B[Push branch]
+B --> C[Open Pull Request]
+C --> D[Review]
+D --> E{Decision}
+E -->|Comment| D
+E -->|Request changes| F[Update code]
+F --> B
+E -->|Approve| G[Merge]
+G --> H["Delete branch (optional)"]
+```
